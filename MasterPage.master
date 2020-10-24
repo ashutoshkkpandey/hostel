@@ -1,0 +1,75 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="Script/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    
+    <asp:ContentPlaceHolder id="head" runat="server">     
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body style="border: 4px solid black">
+<form id="form1" runat="server">
+<div class="container-fluid">
+ 
+     <div style="color: #FFFF00; background-color: #CC3300; font-size: xx-large; width:100%;  font-family: Algerian;">
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+         &nbsp&nbsp; BOYS HOSTEL BILASPUR(CG)<br />
+       <div style="margin-left: 255px; margin-right: 200px;">
+           <asp:Menu ID="Menu1" 
+               runat="server" 
+            Orientation="Horizontal" DynamicEnableDefaultPopOutImage="False" 
+               Font-Names="Agency FB" Font-Size="Large" Font-Strikeout="False" 
+               ForeColor="#660033" meta:resourcekey="Menu1Resource1">
+               <DynamicHoverStyle BackColor="Yellow" />
+               <DynamicMenuItemStyle BorderStyle="Solid" BorderColor="Yellow" BackColor="Aqua" 
+                   HorizontalPadding="6px" />
+            <DynamicSelectedStyle BackColor="Lime" BorderColor="Yellow" BorderStyle="Solid" />
+            <Items>
+                <asp:MenuItem Text="HOME" Value="HOME" NavigateUrl="~/Default7.aspx"  
+                    Selected="True" meta:resourcekey="MenuItemResource1"></asp:MenuItem>
+                <asp:MenuItem Text="STUDENT" Value="STUDENT" 
+                    meta:resourcekey="MenuItemResource4">
+                    <asp:MenuItem Text="REGISTRATION" Value="REGISTRATION" 
+                        NavigateUrl="~/Default2.aspx" meta:resourcekey="MenuItemResource2">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="LOGIN" Value="LOGIN" NavigateUrl="~/Default16.aspx" 
+                        meta:resourcekey="MenuItemResource3"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="PHOTO GALLERY" Value="PHOTO GALLERY" 
+                    NavigateUrl="~/Default4.aspx" meta:resourcekey="MenuItemResource5"></asp:MenuItem>
+                <asp:MenuItem Text="ABOUT" Value="ABOUT" NavigateUrl="~/Default5.aspx" 
+                    meta:resourcekey="MenuItemResource6"></asp:MenuItem>
+                <asp:MenuItem Text="CONTACT " Value="CONTACT " NavigateUrl="~/Default8.aspx" meta:resourcekey="MenuItemResource7" 
+                   ></asp:MenuItem>
+            </Items>
+               <StaticHoverStyle BackColor="Yellow" />
+            <StaticMenuItemStyle 
+                BorderStyle="Solid" Font-Bold="False" Font-Overline="False" 
+                Font-Strikeout="False" Font-Underline="False" 
+                   ForeColor="Black" BackColor="Aqua" BorderColor="#FFCC00" 
+                   HorizontalPadding="28px" />
+               <StaticSelectedStyle BackColor="Lime"/>
+        </asp:Menu>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div> </div>
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+     </asp:ContentPlaceHolder>
+          <div style="background-color:#CC3300;width:100%;color: #FFFF00;height:100px;padding-top:10px"> 
+       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+           Ashutosh Pandey&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Contact us-9340929158</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &copy copyright-2020&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="mailto:Email-ashutoshkpandey99@gmail.com" style="color: #FFFF00;">Email-ashutoshkpandey99@gmail.com</a>&nbsp; </p>
+  </div>
+   </div>
+    </form>
+    </body>
+</html>
